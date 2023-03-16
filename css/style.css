@@ -754,6 +754,8 @@
 
 }
 
+
+/* Scroll to top button with scroll progress */
 #progress {
     position: fixed;
     bottom: 20px;

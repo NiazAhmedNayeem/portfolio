@@ -18,7 +18,7 @@ window.addEventListener('resize', () => {
 
 
 
-
+// Scroll to top button with scroll progress
 let calcScrollValue = () => {
     let scrollProgress = document.getElementById("progress");
     let progressValue = document.getElementById("progress-value");
