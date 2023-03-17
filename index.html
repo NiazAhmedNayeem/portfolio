@@ -79,6 +79,19 @@
           <div class = "home-pg-btn">
             <a href="about.html"><button type = "button" class = "btn">hire me</button></a>
             <a href="services.html"><button type = "button" class = "btn">my works</button></a>
+
+<!-- ------------------------------------- -->
+
+ <!-- background music add here-->
+            <div class="" >
+              <img src="assets/play.png" style="height: 60px; margin-top: 13px;" id="icon-1"/>
+            </div>
+
+            <audio id="mySong">
+              <source src="media/song.mp3" type="audio/mp3">
+            </audio>
+
+<!-- -------------------------------------- -->
           </div>
         </div>
 
@@ -583,6 +596,23 @@
       backSpeed: 50,
       loop: true
     });
+  </script>
+
+
+<!-- background music add here-->
+  <script>
+      var mySong = document.getElementById("mySong"); 
+      var icon = document.getElementById("icon-1");
+      icon.onclick=function(){
+        if(mySong.paused) { 
+          mySong.play();
+          icon.src = "assets/paused.png";
+        }
+        else {
+          mySong.pause();
+          icon.src = "assets/play.png";
+        }
+      }
   </script>
 
   </body>

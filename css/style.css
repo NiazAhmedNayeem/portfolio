@@ -784,3 +784,8 @@
 html {
     scroll-behavior: smooth;
 }
+
+
+#icon-1 {
+    cursor: pointer;
+}
