@@ -490,6 +490,7 @@
     border-radius: 25px;
     outline: 0;
     caret-color: #fff;
+    color: #d0d0d0;
 }
 .contact-form input:focus, .contact-form textarea:focus{
     border-color: var(--green);
@@ -499,6 +500,38 @@
     text-transform: uppercase;
 }
 
+
+
+/* #### VISITOR PAGE #### */
+.visitor{
+    padding: 5rem 0 2.5rem 0;
+}
+
+.visitor .item{
+    text-align: center;
+    padding: 1.5rem 0 4rem 0;
+    background: var(--nero);
+    margin: 1.5rem 0;
+    transition: var(--transition);
+}
+
+.visitor .item h2{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    position: relative;
+}
+.visitor .item h2::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background: var(--green);
+    width: 50px;
+    height: 0.5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 
 
@@ -653,6 +686,16 @@
     .contact .row > div{
         margin: 0;
     }
+
+    /* visitor page */
+    .visitor .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .visitor .item{
+        flex: 0 0 calc(50% - 2rem);
+        margin: 1rem;
+    }
 }
 
 @media screen and (min-width: 992px){
@@ -731,6 +774,10 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 2rem;
+    }
+    /* visitor page */
+    .visitor .item{
+        flex: 0 0 calc(33.33% - 2rem);
     }
 }
 
