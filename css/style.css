@@ -142,6 +142,22 @@
     align-items: center;
 }
 
+.img-bounce-drop {
+    animation: zoomFloat 3s ease-in-out infinite;
+}
+
+@keyframes zoomFloat {
+    0% {
+        transform: scale(0.95) translateY(0px);
+    }
+    50% {
+        transform: scale(1.05) translateY(-12px);
+    }
+    100% {
+        transform: scale(0.95) translateY(0px);
+    }
+}
+
 /* #### ABOUT PAGE #### */
 .about{
     padding: 5rem 0 2.5rem 0;
