@@ -389,7 +389,7 @@
     position: relative;
 }
 .projects .row .item:nth-child(1){
-    background: url(../assets/project-img-1.jpg) center/cover no-repeat;
+    background: url(../assets/project-img-1.png) center/cover no-repeat;
 }
 .projects .row .item:nth-child(2){
     background: url(../assets/project-img-2.jpg) center/cover no-repeat;
